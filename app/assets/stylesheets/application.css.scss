@@ -1,0 +1,84 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url(http://allfont.ru/allfont.css?fonts=jura-medium);
+
+ .is_overlay{ display: block; width: 100%; height: 100%; }
+ #trailer {
+ 	position: fixed;
+ 	top: 0; right: 0; bottom: 0; left: 0;
+ 	overflow: hidden;
+ }
+
+ #trailer > video {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+     min-width: 100%;
+ min-height: 100%;
+ width: auto; height: auto;
+ }
+
+ body{
+     margin: 0;
+     font-family: 'Jura Medium', arial;
+ }
+ .auth{
+     position: absolute;
+     color: #fff;
+     text-align: center;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 70%;
+ }
+ .auth h1{
+     margin-bottom: 0px;
+     font-size: 54px;
+     font-weight: 400;
+ }
+ .auth p:first-of-type{
+     margin-top: 0;
+     margin-bottom: 60px;
+ }
+ .auth p{
+     font-size: 23px;
+ }
+ .auth a{
+     display: block;
+     width: 250px;
+     text-decoration: none;
+     color: #fff;
+     background-color: #45688E;
+     border-radius: 5px;
+     padding: 10px 0;
+     margin: 60px auto 0 auto;
+     display: flex;
+     justify-content: center;
+ }
+ .auth a .logo{
+     background-image: image-url('vk.svg');
+     width: 30px;
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position-y: 4px;
+     margin-right: 10px;
+ }
+ .auth a p{
+     margin: 0!important;
+ }

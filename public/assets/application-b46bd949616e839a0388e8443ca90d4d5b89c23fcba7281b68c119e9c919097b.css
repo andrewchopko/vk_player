@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+@import url(http://allfont.ru/allfont.css?fonts=jura-medium);
+/* line 20, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+.is_overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 21, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+#trailer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* line 27, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+#trailer > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* line 38, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+body {
+  margin: 0;
+  font-family: 'Jura Medium', arial;
+}
+
+/* line 42, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+.auth {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+/* line 51, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+.auth h1 {
+  margin-bottom: 0px;
+  font-size: 54px;
+  font-weight: 400;
+}
+
+/* line 56, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+.auth p:first-of-type {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+/* line 60, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+.auth p {
+  font-size: 23px;
+}
+
+/* line 63, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+.auth a {
+  display: block;
+  width: 250px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #45688E;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 75, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+.auth a .logo {
+  background-image: url(/assets/vk-b23f57b5ae70e96e6b1d6cbdb2e369d945b9539d86280f27a0349cc9275ac6c5.svg);
+  width: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 4px;
+  margin-right: 10px;
+}
+
+/* line 83, /home/andrew/RailsApps/vk_player/app/assets/stylesheets/application.css.scss */
+.auth a p {
+  margin: 0 !important;
+}

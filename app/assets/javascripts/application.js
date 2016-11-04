@@ -32,6 +32,7 @@ $(document).ready(function(){
     $('.vk-button').on("click", function(){
       console.log('vk button clicked!!');
       VK.Auth.login(function(response) {
+        console.log("in vkbutton login");
         if (response.session) {
           sessionStorage.setItem("user_id", response.session["user"]["id"]);
           $.ajax({
@@ -46,7 +47,7 @@ $(document).ready(function(){
             /* Выбранные настройки доступа пользователя, если они были запрошены */
           }
         } else {
-          alert("SORRY, SMTH Went WRONG");
+          console.log("kakayato huynya nevedomaya");
         }
       });
     });

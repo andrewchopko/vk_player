@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
@@ -29,10 +30,21 @@ $(document).ready(function(){
       document.getElementById("vk_api_transport").appendChild(el);
     }, 0);
 
+    $('.exit').on("click", function(){
+    VK.Auth.logout(function(response) {
+      if (response.session) {
+        sessionStorage.setItem("user_id", undefined);
+        if (response.settings) {
+          /* Выбранные настройки доступа пользователя, если они были запрошены */
+        }
+      } else {
+        alert("SMTH went wrong!!");
+      }
+    });
+  });
+
     $('.vk-button').on("click", function(){
-      console.log('vk button clicked!!');
       VK.Auth.login(function(response) {
-        console.log("in vkbutton login");
         if (response.session) {
           sessionStorage.setItem("user_id", response.session["user"]["id"]);
           $.ajax({

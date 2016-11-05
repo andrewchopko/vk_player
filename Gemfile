@@ -31,7 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem "http"
-
+gem 'jquery-ui-rails'
 gem 'json', '~> 1.8', '>= 1.8.3'
 
 group :development, :test do

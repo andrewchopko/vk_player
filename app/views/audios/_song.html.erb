@@ -1,0 +1,22 @@
+<li class="not-active" audiourl="<%= song['url'] %>" artist="<%= song['artist']%> - <%= song['title'] %>" >
+    <div class="li-container">
+         <div class="play-name">
+            <div class="play"></div>
+            <div class="pause"></div>
+            <p class="hidden lyrics_id"><%= song['lyrics_id'] %></p>
+            <p><%= song['artist']%> - <%= song['title'] %></p>
+         </div>
+         <div class="right-group">
+             <div class="stars-time">
+                 <% minutes = song['duration'] / 60 %>
+                 <% seconds = song['duration'] % 60 %>
+                 <div class="time"><%= minutes %>:<%= seconds %></div>
+                 <div class="stars"></div>
+             </div>
+             <div class="text"></div>
+             <div class="comment"></div>
+         </div>
+    </div>
+    <div class="lyrics">
+    </div>
+</li>
